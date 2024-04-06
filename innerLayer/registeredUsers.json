@@ -1,0 +1,100 @@
+[
+  [
+    "JohnSmith123",
+    {
+      "password": "JohnSmith123",
+      "email": "JohnSmith123@gmail.com",
+      "posts": [
+        {
+          "id": "br3f2jgjy",
+          "username": "JohnSmith123",
+          "postTitle": "New Phone",
+          "content": "New phone, and new reality along with it.",
+          "keyWords": [
+            "Phone"
+          ],
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1280px-Image_created_with_a_mobile_phone.png",
+          "timestamp": "2024-03-19T05:52:19.664Z",
+          "likes": 4,
+          "comments": [
+            {
+              "username": "JohnSmith123",
+              "comment": "I'm commenting for extra traction"
+            },
+            {
+              "username": "Jane",
+              "comment": "Nice phone \"John\""
+            },
+            {
+              "username": "JohnSmith123",
+              "comment": "adasd"
+            },
+            {
+              "username": "JohnSmith123",
+              "comment": "\"new realty\" I'm going to hack your nuerlink and show a new reality"
+            },
+            {
+              "username": "JohnSmith123",
+              "comment": "Can you even see the ground now?"
+            },
+            {
+              "username": "JohnSmith123",
+              "comment": "Can you even think?"
+            },
+            {
+              "username": "JohnSmith123",
+              "comment": "what is a think"
+            },
+            {
+              "username": "JohnSmith123",
+              "comment": "asd"
+            }
+          ]
+        },
+        {
+          "id": "l4rn8eaw7",
+          "username": "JohnSmith123",
+          "postTitle": "123",
+          "content": "123",
+          "keyWords": [
+            "123"
+          ],
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1280px-Image_created_with_a_mobile_phone.png",
+          "timestamp": "2024-04-02T07:49:05.799Z",
+          "likes": 0,
+          "comments": []
+        }
+      ]
+    }
+  ],
+  [
+    "Jane",
+    {
+      "password": "jane",
+      "email": "jane@gmail.com",
+      "posts": [
+        {
+          "id": "kg05k85rc",
+          "username": "Jane",
+          "postTitle": "Hi",
+          "content": "hi",
+          "keyWords": [
+            "hi"
+          ],
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1280px-Image_created_with_a_mobile_phone.png",
+          "timestamp": "2024-03-19T05:53:11.648Z",
+          "likes": 0,
+          "comments": []
+        }
+      ]
+    }
+  ],
+  [
+    "hi",
+    {
+      "password": "hi",
+      "email": "hi",
+      "posts": []
+    }
+  ]
+]

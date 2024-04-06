@@ -1,0 +1,576 @@
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  height: 100vh;
+  background-color: #232627;
+  color: white;
+}
+
+html {
+  background-color: #232627;
+
+}
+
+.TopBar {
+  background-color: #151717;
+  position: sticky;
+  top: 0;
+  z-index: 1000; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left:  15px;
+  padding-right: 15px;
+}
+
+.TopBar h1 {
+  margin: 0;
+  cursor: pointer;
+}
+
+.TopBar .searchContainer { 
+  /* Search  Bar */
+  height: 100%;
+  width: 20%;
+  max-width: 500px;
+  color: white;
+  margin-right: 20px;
+  position: relative;
+
+}
+
+.TopBar .searchContainer p{ 
+  font-weight: bolder;
+  border-radius: 8px;
+  margin: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.TopBar .searchContainer input { 
+  width: 100%;
+  height: 18px;
+  border: none;
+  border-radius: 15px;
+  padding-left: 8px;
+  background-color: #3b3b3b;
+  color: white;
+}
+
+
+.TopBar .searchContainer .searchedUsers * { 
+ cursor: pointer;
+ z-index: 10000;
+}
+.TopBar .searchContainer .searchedUsers *:hover { 
+  background-color: #3b3b3b;
+}
+
+.contentContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #232627;
+  padding-bottom: 60px;
+  background: linear-gradient(to bottom, #1e1e39, #044a5e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+.contentContainer .Content { 
+  width: 50%;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+/* Post */
+.post {
+  /* border: 1px solid rgba(255, 255, 255, 0.238); */
+  backdrop-filter: blur( 5px );
+  background: rgba(255, 255, 255, 0.072);
+  border: 1.9px solid rgba(255, 255, 255, 0.252);
+  border-radius: 10px;
+  margin:  20px;
+  box-shadow:  0px 0px 10px rgba(255, 255, 255, 0.183);
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+
+}
+
+.post-footer {
+  background-color: rgba(0, 0, 0, 0.511);
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 0 0 10px 10px;
+}
+
+.post-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.post-username {
+  font-size: 18px;
+}
+
+.post-image img {
+  width: calc( 100% - 15px );
+  max-height: 500px; /* Adjust the maximum height as needed */
+  margin-bottom: 6px;
+  /* padding-left: 10px; */
+  /* padding-right: 10px; */
+  border-radius: 8px;
+}
+
+.post-actions {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.votingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+
+.votingContainer > * {
+  border: 1px solid gray;
+  border-radius: 4px;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.votingContainer > *:hover {
+  color: green;
+  background-color: #615d5d;
+}
+
+
+.like-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s all cubic-bezier(0.25, 0.8, 0.25, 1);
+  color: white;
+  padding: 0;
+  height: 40px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.liked {
+  border: none;
+  background-color: rgb(105, 31, 31);
+  border-radius: 8px;
+  margin: 0;
+}
+
+.like-button:hover {
+  transform: scale(1.2);
+}
+
+.post-likes {
+  /* background: linear-gradient(to right, #2b2b50, #055167); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #044456;
+  border-radius: 8px;
+  border: none;
+  height: 50px;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+
+}
+
+.add-comments {
+  width: 100%;
+  height: 25px;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  background: linear-gradient(to right, #2b2b50, #055167); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin-top: 15px;
+}
+
+.add-comments input {
+  width: 80%;
+  margin: 0;
+  border: none;
+  /* background-color: #ffffff4a; */
+  background-color: transparent;
+  /* backdrop-filter: blur( 10px ); */
+
+  color: white;
+  padding: 7px;
+
+}
+.add-comments button {
+  width: 20%;
+  margin: 0;
+  border: none;
+  background-color: #0000006a;
+  color: white;
+  cursor: pointer;
+
+}
+
+.add-comments button:hover {
+  background-color: #ffffff69;
+
+}
+
+.userButton {
+  border: none;
+  padding: 7px;
+  font-weight: bolder;
+  color: white;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #202223, #25292a);
+  /* box-shadow:   5px 5px 10px #101112,
+               -5px -5px 10px #363b3c; */
+
+  border-radius: 10px;
+  background: linear-gradient(145deg, #1a1d34, #1f223e);
+  box-shadow:  0px 0px 5px rgba(255, 255, 255, 0.256);
+
+  transition: 0.2s all cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+}
+
+.report {
+  color: rgb(250, 109, 66);
+
+}
+
+.closeUserIcon {
+  position: absolute;
+  right: 5px;
+  height: 1.5em;
+}
+
+.expandUserIcon {
+  cursor: pointer;
+
+}
+
+.userButton:hover {
+  transform: scale(1.1);
+}
+
+.post-likes {
+  font-size: 16px;
+}
+
+.post-comment {
+  margin-bottom: 5px;
+}
+
+.post-comment strong {
+  font-weight: bold;
+}
+
+.searchWindowContainer {
+  min-height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #232627;
+  /* background: linear-gradient(to bottom, #353563, #065d76); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #1d203a; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+
+.searchWindow {
+  width: 54%;
+  max-width: 650px;
+  height: 100%;
+  margin-bottom: 50px;
+
+}
+.titleBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addPostBtn {
+  margin-left: 15px;
+  margin-top: 7px;
+  color: gray;
+  cursor: pointer;
+}
+
+.addPostBtn:hover {
+  color: white;
+}
+
+.title {
+  background-image: url('https://www.creativefabrica.com/wp-content/uploads/2023/05/31/Neon-Blue-Purple-Background-Technology-Graphics-71036057-1-580x387.png'); 
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: 0.2s all cubic-bezier(0.25, 0.8, 0.25, 1);
+  color: rgba(255, 255, 255, 0.082);
+
+}
+
+.title:hover {
+  color: rgba(157, 216, 255, 0.247);
+}
+
+.addPostWindowContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1d203a; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.addPostWindow {
+  width: 30%;
+  height:    450px;
+  width:     450px;
+  max-width: 700px;
+  border: 1px solid rgb(107, 103, 103);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #f9f9f91b;
+
+}
+
+.addPostWindow > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+
+.addPostWindow > button {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.43);
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.8s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.addPostWindow > button:hover {
+  box-shadow: 0px 0px 10px gray;
+}
+
+.searchedUsers {
+  min-height: 300px;
+  border-radius: 10px;
+  margin: 20px;
+  border: 1px solid rgb(107, 103, 103);
+  padding-left:  20px;
+  padding-right: 20px;
+  box-shadow: inset 1px solid white;
+  backdrop-filter: blur( 50px );
+  background: rgba(255, 255, 255, 0.053);
+
+
+}
+
+.searchedUsersContainer{
+  height: 100%;
+  padding-left:  10px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.searchedPosts {
+  min-height: 300px;
+  border-radius: 10px;
+  margin: 20px;
+  border: 1px solid rgb(107, 103, 103);
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: inset 1px solid white;
+  backdrop-filter: blur( 50px );
+  background: rgba(255, 255, 255, 0.053);
+}
+
+.searchedUsers h3 {
+  text-align: left;
+}
+.searchedPosts h3 {
+  text-align: left;
+}
+
+/* User */
+
+.UserContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.profile-pic img{
+  width: 60%; /* This will make the image fill its container */
+  height: auto; /* This maintains the aspect ratio */
+}
+
+.User {
+  border-radius: 10px;
+  border: 1px solid #f8f8f854;
+  margin: 10px;
+  height:60px;
+  width:  100%;
+  overflow: hidden;
+  padding: 8px;
+  position: relative;
+}
+
+.expanded {
+  height: 100%;
+  margin : 10px;
+}
+
+.expanded img {
+  height: 30%;
+  width:  30%;
+}
+
+.userUnexpandedView {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /* First and third columns take up 1 fraction, while the middle column takes up 2 fractions */
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.userUnexpandedView > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.userUnexpandedView .profile-pic {
+  border-radius: 100%;
+  max-width: 80px;
+}
+
+.userUnexpandedView .profile-pic img {
+  border-radius: 100%;
+}
+
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  justify-content: space-evenly;
+  gap: 40px;
+  align-items: center;
+  height: 100%;
+}
+
+/*  */
+
+/* Post */
+
+
+.footer {
+  background-color: #151717;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  height: 10px;
+  width: 100%;
+}
+
+.footer * {
+  margin: 0;
+}
+
+/* Scroll Bar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #353333; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555; 
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #777; 
+}
+
+
+.failedToConnect {
+  width:  450px;
+  height: 450px;
+  border: 1px solid rgb(243, 105, 90);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register_and_logIn  {
+  width:  400px;
+  height: 400px;
+  border: 1.9px solid rgba(255, 255, 255, 0.52);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.register_and_logIn button {
+  width: 200px;
+}
